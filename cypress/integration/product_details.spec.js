@@ -1,4 +1,4 @@
-describe('Home page', () => {
+describe('product details', () => {
   it('successfully loads', () => {
     cy.visit('/')
   })
@@ -44,6 +44,6 @@ describe('Home page', () => {
   });
 
   it("should have the product add to cart button", () => {
-    cy.get("button").should("be.visible");
+    cy.contains('button', 'Add').should("be.visible");
   });
 })
